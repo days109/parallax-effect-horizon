@@ -12,6 +12,13 @@ window.addEventListener('load', () => {
 
         if (scrollValue > parallaxHeight) return;
 
+        let birds = document.querySelector('.birds');
+        birds.style.transform = `translate(${ 20 * parallaxScrollPercent / 100 }%, ${ -10 * parallaxScrollPercent / 100 }%)`;
+        birds.style.opacity = `${0.85 - (0.35 * parallaxScrollPercent / 100)}`;
+
+        let suns = document.querySelector('.suns');
+        suns.style.transform = `translate(-50%, ${ -6 * parallaxScrollPercent / 100 }%)`;
+
         let mountain = document.querySelector('.mountain');
         let mountainWidth = screenWidth;
         mountain.style.width = `${mountainWidth + (screenWidth * 0.5 * parallaxScrollPercent / 100)}px`;

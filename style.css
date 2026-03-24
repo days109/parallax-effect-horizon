@@ -42,6 +42,12 @@ html {
     top: 0;
     width: 100%;
 }
+.birds {
+    top: 10%;
+    left: 0;
+    width: 100%;
+    opacity: 0.85;
+}
 .mountain {
     width: 100%;
     top: 15%;
@@ -309,6 +315,11 @@ html {
 }
 
 @media (max-width: 900px) {
+    .birds {
+        top: 14%;
+        width: 130%;
+        left: -10%;
+    }
     .mountain {
         width: 120%;
         top: 40%;
